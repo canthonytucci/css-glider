@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Glider</title>
+    <style type="text/css">
+    /* aspect Ratio with method from http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio */
+        .container {
+          position:relative; 
+          width: 25%;
+          display:inline-block;
+        }
+        .squaremaker {
+            margin-top: 100%;
+        }
+        .glider {
+            background-color: black; /* divder color */
+            height: 100%;
+            width: 100%
+        }
+        .square {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .box {
+            background-color: white; /* cell bg */
+            width: 33%;
+            height: 33%;
+        }
+        .fill {
+            margin-left: auto;
+            margin-right: auto;
+            width: 95%;
+            height: 95%;
+            background-color: red; /* dot color */
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="squaremaker"></div>
+        <div class="square">
+            <table class="glider">
+                <tr>
+                    <td class="box"></td> <td class="box"><div class="fill"></div></td> <td class="box"></td>
+                </tr>
+                <tr>
+                    <td class="box"></td> <td class="box"></td> <td class="box"><div class="fill"></div></td>
+                </tr>
+                <tr>
+                    <td class="box"><div class="fill"></div></td> <td class="box"><div class="fill"></div></td> <td class="box"><div class="fill"></div></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
